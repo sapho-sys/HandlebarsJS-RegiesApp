@@ -49,140 +49,132 @@
   </script>
 
   <div class="container">
-    <!--Regies with handlebars-->
-    <div class="six columns box">
+    
+      
+    <div class="widgets">
+        <div class="bg-text">
+          <fieldset>
+            <legend>Registration System (handlebars)</legend>
 
-      <div class="bg-text">
-        <fieldset>
-          <legend>Registration System</legend>
+            <input type="text" class="regBox" name="plate" placeholder="enter a new plate"><br>
+            <label for="plates">eg; CA 123456, CF 123-456, CL 123-456, CJ 765987</label>
+            <br><br>
+            <div class="display-btn">
+              <button class="add" on type="button" name="button">Add</button>
+              <button class="reset" on type="button" name="button">Reset Storage</button>
+            </div>
 
-          <input type="text" class="regBox" name="plate" placeholder="enter a new plate"><br>
-          <label for="plates">eg; CA 123456, CF 123-456, CL 123-456, CJ 765987</label>
+            <br><br>
+            <div class="form flex">
+
+              <input class="rad1" type="radio" id="Cpt" name="town" value="Cape Town">
+              <label for="Cpt">Cape Town</label>
+              <input class="rad1" type="radio" id="Paarl" name="town" value="Paarl">
+              <label for="Paarl">Paarl</label>
+              <input class="rad1" type="radio" id="Stellies" name="town" value="Stellenbosch">
+              <label for="Stellies">Stellenbosch</label>
+              <input type="radio" id="Kuilsriver" name="town" value="Kuilsriver">
+              <label for="Kuilsriver">Kuilsriver</label>
+            </div>
+            <br><br>
+
+          </fieldset>
           <br><br>
-          <div class="display-btn">
-            <button class="add" on type="button" name="button">Add</button>
-            <button class="reset" on type="button" name="button">Reset Storage</button>
+
+
+
+          <div class="display-btns">
+            <button class="show" on type="button" name="button">Show</button>
+            <button class="showAll" on type="button" name="button">Show All</button>
           </div>
 
-          <br><br>
-          <div class="form flex">
-
-            <input class="rad1" type="radio" id="Cpt" name="town" value="Cape Town">
-            <label for="Cpt">Cape Town</label>
-            <input class="rad1" type="radio" id="Paarl" name="town" value="Paarl">
-            <label for="Paarl">Paarl</label>
-            <input class="rad1" type="radio" id="Stellies" name="town" value="Stellenbosch">
-            <label for="Stellies">Stellenbosch</label>
-            <input type="radio" id="Kuilsriver" name="town" value="Kuilsriver">
-            <label for="Kuilsriver">Kuilsriver</label>
-          </div>
-          <br><br>
-
-        </fieldset>
-        <br><br>
 
 
 
-        <div class="display-btns">
-          <button class="show" on type="button" name="button">Show</button>
-          <button class="showAll" on type="button" name="button">Show All</button>
+        </div>
+
+        <div class="dispReg1">
+          <!-- <div class="plates"></div> -->
+          <!-- <div class="error"></div> -->
+
+
+
+        </div>
+        <div class="error1">
+
         </div>
 
 
 
 
-      </div>
-
-      <div class="dispReg1">
-        <!-- <div class="plates"></div> -->
-        <!-- <div class="error"></div> -->
 
 
+      
+     
+        <div class="bg-txt">
+          <fieldset>
+            <legend>Registration System</legend>
 
-      </div>
-      <div class="error1">
+            <input type="text" class="regBox1" name="plate" placeholder="enter a new plate"><br>
+            <label for="plates">eg; CA 123456, CF 123-456, CL 123-456, CJ 765987</label>
+            <br><br>
+            <div class="display-btn1">
+              <button class="increment" on type="button" name="button">Add</button>
+              <button class="reset1" on type="button" name="button">Reset Storage</button>
+            </div>
 
-      </div>
+            <br><br>
+            <div class="form2 flex">
+              <input class="rad11" type="radio" id="Cpt" name="town" value="Cape Town">
+              <label for="Cpt">Cape Town</label>
+              <input class="rad11" type="radio" id="Paarl" name="town" value="Paarl">
+              <label for="Paarl">Paarl</label>
+              <input class="rad11" type="radio" id="Stellies" name="town" value="Stellenbosch">
+              <label for="Stellies">Stellenbosch</label>
+              <input class="rad11" type="radio" id="Kuilsriver" name="town" value="Kuilsriver">
+              <label for="Kuilsriver">Kuilsriver</label>
+            </div>
+            <br><br>
 
-
-
-
-
-
-    </div>
-
-
-    <!--Regies without handlebars-->
-    <div class="six columns box">
-      <div class="bg-txt">
-        <fieldset>
-          <legend>Registration System</legend>
-
-          <input type="text" class="regBox1" name="plate" placeholder="enter a new plate"><br>
-          <label for="plates">eg; CA 123456, CF 123-456, CL 123-456, CJ 765987</label>
+          </fieldset>
           <br><br>
-          <div class="display-btn1">
-            <button class="increment" on type="button" name="button">Add</button>
-            <button class="reset1" on type="button" name="button">Reset Storage</button>
+
+
+
+          <div class="display-btns">
+            <button class="show1" on type="button" name="button">Show</button>
+            <button class="showAll1" on type="button" name="button">Show All</button>
           </div>
 
-          <br><br>
-          <div class="form2 flex">
-            <input class="rad11" type="radio" id="Cpt" name="town" value="Cape Town">
-            <label for="Cpt">Cape Town</label>
-            <input class="rad11" type="radio" id="Paarl" name="town" value="Paarl">
-            <label for="Paarl">Paarl</label>
-            <input class="rad11" type="radio" id="Stellies" name="town" value="Stellenbosch">
-            <label for="Stellies">Stellenbosch</label>
-            <input class="rad11" type="radio" id="Kuilsriver" name="town" value="Kuilsriver">
-            <label for="Kuilsriver">Kuilsriver</label>
-          </div>
-          <br><br>
-
-        </fieldset>
-        <br><br>
 
 
 
-        <div class="display-btns">
-          <button class="show1" on type="button" name="button">Show</button>
-          <button class="showAll1" on type="button" name="button">Show All</button>
+        </div>
+        <div class="dispReg">
+          <!-- <div class="plates"></div> -->
+          <!-- <div class="error"></div> -->
+
+
+
+        </div>
+        <div class="error">
+
+        </div>
+
         </div>
 
 
 
 
-      </div>
-      <div class="dispReg">
-        <!-- <div class="plates"></div> -->
-        <!-- <div class="error"></div> -->
-
-
-
-      </div>
-      <div class="error">
-
-      </div>
 
 
 
 
 
-
-
-
-
+    
     </div>
 
 
-    
-     
-    
-
-
-    
-     
-    
 
 
 
@@ -190,7 +182,15 @@
 
 
 
-  </div>
+
+
+
+
+
+
+
+
+  
 
 
 
