@@ -10,7 +10,6 @@ var error = document.querySelector(".error");
 
 
 
-
 // Add event listeners
 addButton.addEventListener('click', regNumber);
 showBtn.addEventListener('click', showTownReg);
@@ -21,9 +20,9 @@ resetBtn.addEventListener('click', resetPage)
 var strRadio = "";
 
 //regex for my towns
-const regExp1 = /^((CA|CF|CJ|CL)\s([0-9]){6})$/;
-const regExp2 = /^((CA|CF|CJ|CL)\s([0-9]){3}\s([0-9]){3})$/;
-const regExp3 = /^((CA|CF|CJ|CL)\s([0-9]){3}\-([0-9]){3})$/;
+const regExpTemp = /^((CA|CF|CJ|CL)\s([0-9]){6})$/;
+const regExpTemp2 = /^((CA|CF|CJ|CL)\s([0-9]){3}\s([0-9]){3})$/;
+const regExpTemp3 = /^((CA|CF|CJ|CL)\s([0-9]){3}\-([0-9]){3})$/;
 let enteredPlate;
 
 //compile before initialization
@@ -51,7 +50,7 @@ let Instantiate = regFactory(enteredPlate);
 //handles the values entered then 
 function addObject(myObject) {
     var changed = Object.keys(myObject);
-    
+   
         dispReg.innerHTML = registrarTemplate({regNumbers: changed});
    
 }
@@ -59,8 +58,11 @@ function addObject(myObject) {
 //handles all the plates entered
 function addArray(myArray) {
     if (myArray.length != 0) {
+
+        
         
             dispReg.innerHTML = registrarTemplate({regNumbers: myArray});
+        
 
         
     } else {
@@ -93,7 +95,7 @@ function regNumber() {
 
     if (regBox.value !== "") {
 
-        if (regBox.value.toUpperCase().match(regExp1) || regBox.value.toUpperCase().match(regExp2) || regBox.value.toUpperCase().match(regExp3)) {
+        if (regBox.value.toUpperCase().match(regExpTemp) || regBox.value.toUpperCase().match(regExpTemp2) || regBox.value.toUpperCase().match(regExpTemp3)) {
 
             if (Instantiate.addRegNo(regBox.value)) {
 
