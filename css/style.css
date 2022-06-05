@@ -107,7 +107,7 @@ p {
     display: flex;
     /* flex-wrap: wrap; */
     /* margin-left:80%; */
-    margin-bottom: 10%;
+    /* margin-top: 30%; */
 
   }
   .dispReg1{
@@ -126,7 +126,7 @@ p {
     display: flex;
     /* flex-wrap: wrap; */
     /* margin-right: 80%; */
-    margin-bottom: 10%;
+    /* margin-top: 30%; */
 
   }
   .widgets{
@@ -152,12 +152,12 @@ p {
   font-weight: bold;
   border: 3px solid #f1f1f1;
   position: absolute;
-  top: 100%;
+  /* top: 100%; */
   left:80%;
   /* height:400%; */
-  /* margin-top: 20%; */
+  margin-top: 30%;
   transform: translate(-50%, -50%);
-  z-index: 0;
+  /* z-index: 0; */
   width: 50%;
   padding: 20px;
   text-align: center;
@@ -181,12 +181,12 @@ p {
     font-weight: bold;
     border: 3px solid #f1f1f1;
     position: absolute;
-    top: 100%;
+    /* top: 100%; */
     right: 30%;
     /* height:400%; */
-    /* margin-top: 20%; */
+    margin-top: 30%;
     transform: translate(-50%, -50%);
-    z-index: 0;
+    /* z-index: 0; */
     width: 50%;
     padding: 20px;
     text-align: center;
